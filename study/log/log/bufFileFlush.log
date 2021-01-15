@@ -1,0 +1,48 @@
+Info Inf INFO INF i Hello from Seelog!
+Warn Wrn WARN WRN w Warn
+Error Err ERROR ERR e Error
+Info Inf INFO INF i Hello from Seelog!
+Warn Wrn WARN WRN w Warn
+Error Err ERROR ERR e Error
+Info Inf INFO INF i Hello from Seelog!
+Warn Wrn WARN WRN w Warn
+Error Err ERROR ERR e Error
+2021-01-14 18:20:14[INFO][Hello from Seelog!]
+2021-01-14 18:20:14[WARN][Warn]
+2021-01-14 18:20:14[ERROR][Error]
+2021-01-14 18:21:09[INFO][Hello from Seelog!]
+2021-01-14 18:21:09[WARN][Warn]
+2021-01-14 18:21:09[ERROR][Error]
+2021-01-14 18:21:37[INFO][Hello from Seelog!]
+2021-01-14 18:21:37[WARN][Warn]
+2021-01-14 18:21:37[ERROR][Error]
+2021-01-14 18:21:46[INFO][Hello from Seelog!]
+2021-01-14 18:21:46[WARN][Warn]
+2021-01-14 18:21:46[ERROR][Error]
+2021-01-14 18:22:54[INFO][Hello from Seelog!]
+2021-01-14 18:22:54[WARN][Warn]
+2021-01-14 18:22:54[ERROR][Error]
+2021-01-14 18:23:31[INFO][Hello from Seelog!]
+2021-01-14 18:23:31[WARN][Warn]
+2021-01-14 18:23:31[ERROR][Error]
+2021-01-14 18:24:37[INFO][Hello from Seelog!]
+2021-01-14 18:24:37[WARN][Warn]
+2021-01-14 18:24:37[ERROR][Error]
+2021-01-14 18:25:43[INFO][Hello from Seelog!]
+2021-01-14 18:25:43[WARN][Warn]
+2021-01-14 18:25:43[ERROR][Error]
+[2021-01-14 18:26:11][INFO][Hello from Seelog!]
+[2021-01-14 18:26:11][WARN][Warn]
+[2021-01-14 18:26:11][ERROR][Error]
+[2021-01-14 18:26:32][INFO][Hello from Seelog!]
+[2021-01-14 18:26:32][WARN][Warn]
+[2021-01-14 18:26:32][ERROR][Error]
+[2021-01-14 18:27:50][INFO][Hello from Seelog!]
+[2021-01-14 18:27:50][WARN][Warn]
+[2021-01-14 18:27:50][ERROR][Error]
+[2021-01-14 18:28:42][INFO][Hello from Seelog!]
+[2021-01-14 18:28:42][WARN][Warn]
+[2021-01-14 18:28:42][ERROR][Error]
+[2021-01-14 18:40:44][INFO][Hello from Seelog!]
+[2021-01-14 18:40:44][WARN][Warn]
+[2021-01-14 18:40:44][ERROR][Error]

@@ -1,0 +1,59 @@
+{
+  "console": {
+    "enable": true,
+    "level": "DEBUG"
+  },
+  "files": [
+    {
+      "enable": true,
+      "level": "DEBUG",
+      "filename": "./log/root.log",
+      "category": "root",
+      "pattern": "[%D %T][%L][%M]"
+    },
+    {
+      "enable": true,
+      "level": "INFO",
+      "filename": "./log/service.log",
+      "category": "service",
+      "pattern": "[%D %T][%L][%M]",
+      "rotate": true,
+      "maxsize": "500M",
+      "maxlines": "10K",
+      "daily": true,
+      "daily_opendate": 14
+    },
+    {
+      "enable": true,
+      "level": "WARNING",
+      "filename": "./log/warn.log",
+      "category": "warn",
+      "pattern": "[%D %T][%L][%S][%M]",
+      "rotate": true,
+      "maxsize": "500M",
+      "maxlines": "10K",
+      "daily": true
+    },
+    {
+      "enable": true,
+      "level": "ERROR",
+      "filename": "./log/error.log",
+      "category": "error",
+      "pattern": "[%D %T][%L][%S][%M]",
+      "rotate": true,
+      "maxsize": "500M",
+      "maxlines": "10K",
+      "daily": true
+    }
+  ],
+  "sockets": [
+    {
+      "enable": false,
+      "level": "DEBUG",
+      "category": "TestSocket",
+      "pattern": "[%D %T] [%C] [%L] (%S) %M",
+      "addr": "127.0.0.1:12124",
+      "protocol": "udp"
+    }
+  ]
+}

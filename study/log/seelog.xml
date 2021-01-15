@@ -1,0 +1,43 @@
+<seelog type="asynctimer" asyncinterval="5000000" minlevel="debug" maxlevel="error">
+    <exceptions>
+        <exception funcpattern="*main.test*Something*" minlevel="info"/>
+        <exception filepattern="*main.go" minlevel="error"/>
+    </exceptions>
+    <outputs formatid="main">
+        <console/>
+
+        <rollingfile formatid="someformat" type="size" filename="./log/root.log" maxsize="10000" maxrolls="5"/>
+
+        <buffered formatid="testlevels" size="10000" flushperiod="10000">
+            <file path="./log/bufFileFlush.log"/>
+        </buffered>
+
+
+        <filter levels="error">
+            <splitter formatid="error">
+                <file path="./log/error.log"/>
+            </splitter>
+        </filter>
+        <filter levels="info">
+            <splitter formatid="info">
+                <file path="./log/info.log"/>
+            </splitter>
+        </filter>
+        <filter levels="warn">
+            <splitter formatid="warn">
+                <file path="./log/warn.log"/>
+            </splitter>
+        </filter>
+
+    </outputs>
+    <formats>
+        <format id="main" format="%Date(2006 Jan 02/3:04:05.000000000 PM MST) [%Level] %Msg%n"/>
+        <format id="someformat" format="[%Date %Time][%LEVEL][%Msg]%n"/>
+        <format id="testlevels" format="[%Date %Time][%LEVEL][%Msg]%n"/>
+        <!--        <format id="usetags" format="&lt;msg&gt;%Msg&lt;/time&gt;"/>-->
+        <format id="info" format="[%Date %Time][%LEVEL][%Msg]%n"/>
+        <format id="warn" format="[%Date %Time][%FullPath:%FuncShort:%Line][%Msg]%n"/>
+        <format id="error" format="[%Date %Time][%FullPath:%FuncShort:%Line][%Msg]%n"/>
+
+    </formats>
+</seelog>
